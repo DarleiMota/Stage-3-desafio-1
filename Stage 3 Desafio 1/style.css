@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body{
+  background: #EFEFEF;
+}
+/*Configuração do background do header*/
+body::before{
+  content:"";
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;  
+}
+
+#allpage{
+  width: 750px;
+  margin: auto;
+}
+
+/*Configuração dos header e seus elementos*/
+header h1{
+  color: #FFF;
+  font-family: Staatliches;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  height: 60px;
+  width: 163px;
+
+  margin: 140px 0 18px;
+}
+
+header p{
+  color: #FFF;
+  font-size: 20px;
+
+  height: 46px;
+  width: 417px;
+  
+  margin-bottom: 58px;
+}
+
+/*Configuração do corpo do formulario*/
+main{
+  border-radius: 20px 20px 0px 0px;
+  background: #FFF;
+
+  padding: 32px 64px 48px 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+/*Configuração de todos os legends*/
+legend{
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 1px #E6E6F0 solid;
+
+  width: 100%;
+
+  margin-top: 32px;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+  
+}
+
+/*Configuração do primeiro bloco fieldset*/
+#inf-personal{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Configuração geral dos inputs*/
+.input-wrapper{
+  display:flex;
+  flex-direction: column; 
+  gap: 8px;
+}
+
+.input-wrapper label{
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.input-wrapper label span{
+  color: #C1BCCC;
+  font-size: 12px; 
+}
+
+.input-wrapper label span:hover{
+  color:#615f66;
+}
+
+.input-wrapper input{
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+  
+  width: 100%;
+  height: 56px;
+  
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+input{
+  border: 2px solid red;
+}
+
+/* bloco de imput do names */
+#names {
+  display: flex;
+  gap: 22px;
+}
+
+#names input{
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+ 
+  width: 300px;
+  height: 56px;
+  
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* bloco de input email e password*/
+#email-password input{
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+  
+  width: 100%;
+  height: 56px;
+  
+  padding-left: 10px;
+}
+
+/* bloco de imput do Data e Hora */
+#mentor h2{
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.super-mentor{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.date-mentor input{
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+  
+  width: 300px;
+  height: 56px;
+  
+  padding-left: 10px;
+}
+
+.time-mentor{
+  display: flex;
+  gap: 10px;
+}
+
+.time-mentor input{
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+
+  width: 140px;
+  height: 56px;
+
+  padding-left: 10px;
+}
+
+/* Rodapé botão */
+footer{
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+
+  height: 160px;
+
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer input{
+  color: #FFF;
+  font-family: Staatliches;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+  line-height: 26px;
+  
+  width: 608px;
+  height: 55px;
+  
+  margin: auto;
+  padding: 15px 40px;
+}
+
+footer input:hover{
+  background: #6b2331;
+  border: 1px solid #1f1e1e ;
+}
+
+
